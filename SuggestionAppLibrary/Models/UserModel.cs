@@ -1,0 +1,15 @@
+﻿namespace SuggestionAppLibrary.Models;
+public class UserModel
+{
+   [BsonId]
+   [BsonRepresentation(BsonType.String)]
+   public string Id { get; set; }
+   public string ObjectIdentifier { get; set; }
+   public string FirstName { get; set; }
+   public string LastName { get; set; }
+   public string DisplayName { get; set; }
+   public string EmailAdress { get; set; }
+   public List<BasicSuggestionModel> AuthoredSuggestion { get; set; } = new();
+   public List<BasicSuggestionModel> VotedOnSuggestion { get; set; } = new();
+
+}
