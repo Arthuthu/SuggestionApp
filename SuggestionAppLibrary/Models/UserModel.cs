@@ -2,7 +2,7 @@
 public class UserModel
 {
    [BsonId]
-   [BsonRepresentation(BsonType.String)]
+   [BsonRepresentation(BsonType.ObjectId)]
    public string Id { get; set; }
    public string ObjectIdentifier { get; set; }
    public string FirstName { get; set; }
